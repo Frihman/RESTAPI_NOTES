@@ -30,6 +30,31 @@ router.get('/:id', function(req, res, next) {
     });
 });
 
+router.delete('/:id', function(req, res, next) {
+    fs.readFile(dataPath, (err,data) =>{
+        if(err) {
+            throw err;
+        }
+
+        var notesdata = JSON.parse(data);
+
+        var id = req.params.id;
+
+        delete notesdata[id];
+
+        console.log(notesdata);
+
+        fs.writeFile(dataPath, JSON.stringify(notesdata), (err)=>{
+            if(err) {
+                throw err;
+            };
+            res.status(200).send("note deleted successfully");
+        });
+
+        //TODO: Hantera att endast giltiga ID funkar
+    });
+});
+
 //POST a new Note
 router.post('/', function(req, res, next) {
 
@@ -51,7 +76,33 @@ router.post('/', function(req, res, next) {
             if(err) {
                 throw err;
             };
-            res.status(200).send("new user added successfully");
+            res.status(200).send("new note added successfully");
+        });
+    });
+    
+});
+
+//edit note
+router.put('/:id', function(req, res, next) {
+
+    var notesdata;
+
+    fs.readFile(dataPath, (err,data) =>{
+        if(err) {
+            throw err;
+        }
+        
+        var id = req.params.id;
+
+        notesdata = JSON.parse(data);
+        
+        notesdata[id] = JSON.parse(req.body.data);
+        
+        fs.writeFile(dataPath, JSON.stringify(notesdata), (err)=>{
+            if(err) {
+                throw err;
+            };
+            res.status(200).send("note edited successfully");
         });
     });
     

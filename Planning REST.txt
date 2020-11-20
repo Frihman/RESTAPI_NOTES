@@ -28,23 +28,3 @@ NotesObject
     "author": "My Name",
     "favourite": "true/false"
 }
-
-NotesObject
-[
-    {
-        "title": "My first note",
-        "content": "My notes content",
-        "createdDate": "YYYYMMDD",
-        "updatedDate": "YYYYMMDD",
-        "author": "My Name",
-        "favourite": "true/false"
-    },
-    {
-        "title": "My first note",
-        "content": "My notes content",
-        "createdDate": "YYYYMMDD",
-        "updatedDate": "YYYYMMDD",
-        "author": "My Name",
-        "favourite": "true/false"
-    }
-]

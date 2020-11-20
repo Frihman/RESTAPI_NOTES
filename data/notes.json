@@ -1,16 +1,1 @@
-{
-    "1": {
-        "title": "AAAA",
-        "content": "Aaaaaaaaaaaaaaaaaaaa",
-        "author": "nicemannen",
-        "favorite": "true",
-        "id": 1
-    },
-    "2": {
-        "title": "fasgasgasrg",
-        "content": "sragggg",
-        "author": "nicemannen",
-        "favorite": "false",
-        "id": 2
-    }
-}
+{"1":{"title":"AAAA","content":"Aaaaaaaaaaaaaaaaaaaa","author":"nicemannen","favorite":"true","id":1},"2":{"title":"ajajaj","content":"tjeeeena","author":"nicemannen","favorite":"false"}}
