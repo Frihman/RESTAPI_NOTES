@@ -25,8 +25,6 @@ NotesObject
 {
     "title": "My first note",
     "content": "My notes content",
-    "createdDate": "YYYYMMDD",
-    "updatedDate": "YYYYMMDD",
     "author": "My Name",
     "favourite": "true/false"
 }

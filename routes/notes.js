@@ -28,18 +28,12 @@ router.get('/:id', function(req, res, next) {
         res.send(notesdata[id]);
         //TODO: Hantera att endast giltiga ID funkar
     });
-  });
+});
 
 //POST a new Note
 router.post('/', function(req, res, next) {
 
-    var notesdata = {
-        
-        "title": "kashjdfghasdfhjsdgfhj",
-        "content": "sdfsdff",
-        "id": 1
-        
-    }; 
+    var notesdata;
 
     fs.readFile(dataPath, (err,data) =>{
         if(err) {
@@ -61,6 +55,6 @@ router.post('/', function(req, res, next) {
         });
     });
     
-  });
+});
 
 module.exports = router;

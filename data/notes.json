@@ -2,21 +2,15 @@
     "1": {
         "title": "AAAA",
         "content": "Aaaaaaaaaaaaaaaaaaaa",
+        "author": "nicemannen",
+        "favorite": "true",
         "id": 1
     },
     "2": {
-        "title": "BBBBBBB",
-        "content": "the brown fox jumped",
+        "title": "fasgasgasrg",
+        "content": "sragggg",
+        "author": "nicemannen",
+        "favorite": "false",
         "id": 2
-    },
-    "3": {
-        "title": "CCCCC",
-        "content": "the brown fox jumped",
-        "id": 3
-    },
-    "4": {
-        "title": "dddd",
-        "content": "the  slow brown fox jumped",
-        "id": 4
     }
 }
